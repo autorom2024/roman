@@ -1,0 +1,173 @@
+{
+  "sidebar": {
+    "audio": "Audio",
+    "photo": "Photo",
+    "video": "Video",
+    "planner": "Planner",
+    "autofill": "AutoFill",
+    "keys": "API Keys"
+  },
+  "controlPanel": {
+    "resourceMonitor": "Resource Monitor",
+    "processControl": "Process Control",
+    "logs": "Logs"
+  },
+  "resourceMonitor": {
+    "title": "Resource Monitor",
+    "cpu": "CPU",
+    "ram": "RAM",
+    "gpu": "GPU",
+    "tooltip": "Resource usage is simulated for demonstration purposes."
+  },
+  "processControls": {
+    "start": "START",
+    "stop": "STOP"
+  },
+  "logs": {
+    "welcome": "Welcome to Voikan Records Dashboard!",
+    "cleared": "Logs cleared.",
+    "clear": "Clear Logs",
+    "noProcess": "No process configured to run.",
+    "processStarted": "▶ Process started",
+    "processCompleted": "✔ Process completed",
+    "processStopped": "■ Process stopped",
+    "stopped": "Stopped by user",
+    "error": "❌ Error"
+  },
+  "header": {
+    "changePC": "Change PC"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "plan": "Plan"
+  },
+  "pagePlaceholder": {
+    "underConstruction": "Content for this page is under construction."
+  },
+  "progress": {
+    "starting": "Starting...",
+    "completed": "Completed",
+    "error": "Error",
+    "stopped": "Stopped",
+    "authorizing": "Authorizing...",
+    "checking": "Checking...",
+    "generatingTitles": "Generating titles...",
+    "waiting": "⏳ [{{bar}}] Waiting {{elapsed}}/{{total}}s • track {{track}}",
+    "saved": "✅ {{filename}}"
+  },
+  "errors": {
+    "unknown": "Unknown error"
+  },
+  "video": {
+    "tabs": {
+      "video": "Video",
+      "shorts": "Shorts"
+    },
+    "placeholders": {
+      "video": "Video Editing",
+      "shorts": "Shorts Editing"
+    }
+  },
+  "audio": {
+    "workMode": {
+      "title": "Work Mode",
+      "tracks": "🎵 Suno (KIE)",
+      "albums": "💿 Albums"
+    },
+    "tracks": {
+      "title": "Track Generation (Suno/KIE)",
+      "mode": "Generation Mode",
+      "modeAuto": "Auto/Vocal",
+      "modeLyrics": "Lyrics",
+      "style": "Style / Description",
+      "stylePlaceholder": "Music style/description...",
+      "lyrics": "Lyrics for Tracks",
+      "lyricsPlaceholder": "Enter lyrics ('Lyrics' mode)",
+      "options": "Options",
+      "instrumental": "Instrumental",
+      "gptTitles": "Generate titles with GPT/Gemini",
+      "countDuration": "Count / Duration",
+      "batches": "Batches (×2)",
+      "duration": "Duration (min)",
+      "trackTitles": "Track Titles (use ; )",
+      "trackTitlesPlaceholder": "Empty for auto-generation",
+      "defaultTitle": "Track"
+    },
+    "albums": {
+      "title": "Create Albums from Local Tracks",
+      "source": "Source (folder with tracks)",
+      "sourcePlaceholder": "Click icon to select a folder",
+      "destination": "Save albums to (root)",
+      "destinationPlaceholder": "Enter destination path",
+      "count": "Albums / Tracks",
+      "albums": "Albums",
+      "tracksPerAlbum": "Tracks/album"
+    },
+    "logs": {
+      "checkingKie": "🛰️ Checking KIE key and fetching models...",
+      "kieBalance": "💰 KIE Balance: {{count}} credits.",
+      "kieBalanceFail": "⚠️ Could not fetch KIE balance.",
+      "modelsFound": "✅ Found {{count}} models. Selected: {{model}}",
+      "modelsNotFound": "⚠️ No available KIE models found. Check API key.",
+      "authErrorKie": "❌ KIE authorization error",
+      "checkingGpt": "🛰️ Checking GPT/Gemini key...",
+      "gptSuccess": "✅ GPT/Gemini key is valid.",
+      "authErrorGpt": "❌ GPT/Gemini key error",
+      "gptWarning": "⚠️ GPT/Gemini key is invalid. Using local title generator.",
+      "generatingTitles": "✨ Generating titles with GPT/Gemini...",
+      "titlesGenerated": "✅ Generated {{count}} titles.",
+      "titleGenError": "⚠️ GPT/Gemini title generation error",
+      "creatingTask": "🛰️ Creating task ({{current}}/{{total}})...",
+      "taskCreated": "🛰️ Task created • taskId={{taskId}}",
+      "noUrl": "⚠️ Item has no audio URL.",
+      "downloading": "⬇️ Downloading [{{current}}/{{total}}] — {{filename}}",
+      "downloadFail": "⚠️ Failed to download {{url}}",
+      "saved": "✅ Saved [{{current}}/{{total}}] — {{filename}}",
+      "albumProcessStart": "💿 Starting album creation: {{albums}} albums, {{tracks}} tracks each from '{{source}}' to '{{dest}}'",
+      "creatingAlbum": "Creating album {{current}}/{{total}}...",
+      "albumProcessEnd": "💿✔ Finished creating all albums.",
+      "notEnoughTracks": "⚠️ Not enough tracks to create album #{{album}}."
+    },
+    "errors": {
+      "noKieKey": "KIE API Key is not configured. Please set it on the 'API Keys' page.",
+      "noGptKey": "Please provide a GPT/Gemini API Key.",
+      "noModel": "Model not selected.",
+      "gptNonArray": "API did not return an array.",
+      "noTaskId": "Response without taskId",
+      "timeout": "Task wait time exceeded.",
+      "noItems": "Response without items.",
+      "noAlbumPaths": "Source or destination path for albums not specified.",
+      "noAlbumSource": "Source tracks for albums not selected."
+    },
+    "status": {
+      "kieReady": "KIE API Ready. Model: {{model}}.",
+      "kieNotReady": "KIE API not configured.",
+      "geminiReady": "Gemini API Ready.",
+      "geminiNotReady": "Gemini API not configured.",
+      "goToSettings": "Go to Settings"
+    }
+  },
+  "keysPage": {
+    "title": "API Key Management",
+    "kie": {
+      "title": "KIE (Suno) API",
+      "label": "KIE API Key",
+      "placeholder": "Enter KIE key",
+      "button": "Check/Models",
+      "credits": "{{count}} credits",
+      "modelLabel": "Suno Model (KIE)",
+      "modelPlaceholder": "Authorize first"
+    },
+    "gemini": {
+      "title": "Gemini (Google) API",
+      "label": "GPT/Gemini API Key",
+      "placeholder": "For title generation (OpenAI, Gemini)",
+      "button": "Check",
+      "status": {
+        "ok": "Key OK",
+        "bad": "Error",
+        "unknown": "Not checked"
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Voikan Records Dashboard",
+  "description": "A web-based replica of the Voikan Records multimedia panel, showcasing a futuristic and professional UI for managing audio, photo, and video workflows.",
+  "requestFramePermissions": []
+}
